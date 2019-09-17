@@ -16,8 +16,8 @@ namespace Practice_2_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new ListUI());
-            Application.Run(new Practice_2());
+            Application.Run(new ListUI());
+            //Application.Run(new Practice_2());
         }
     }
 }
