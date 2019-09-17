@@ -12,7 +12,7 @@ namespace Practice_2_1
 {
     public partial class ListUI : Form
     {
-        List<string> names = new List<string> { };
+        .List<string> names = new List<string> { };
         public ListUI()
         {
             InitializeComponent();
@@ -22,13 +22,27 @@ namespace Practice_2_1
         {
            names.Add(nameTextBox.Text);
 
+            Show();
+
+            MessageBox.Show("Add");
+
+
+        }
+        private void Show()
+        {
+
             string message = "";
-         
-            foreach(string name in names)
+            foreach (string name in names)
             {
                 message += "Name : " + name + "\n";
             }
             MessageBox.Show(message);
+
+        }
+
+        private void showButton_Click(object sender, EventArgs e)
+        {
+            Show();
         }
     }
 }
